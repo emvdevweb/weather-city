@@ -1,0 +1,63 @@
+.header {
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--ink);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.brandMark {
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--sun);
+  color: var(--ink);
+  font-size: 0.7rem;
+  letter-spacing: 0.02em;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.navLink {
+  color: var(--ink);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.2em;
+}
+
+.navLink[aria-current="page"] {
+  color: var(--blue);
+}
+
+@media (max-width: 34rem) {
+  .header {
+    min-height: 4.5rem;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6rem;
+    padding-block: 0.85rem;
+  }
+
+  .navigation {
+    gap: 1rem;
+  }
+}

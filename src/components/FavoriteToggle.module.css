@@ -1,0 +1,31 @@
+.toggle {
+  min-height: 2.75rem;
+  padding: 0.55rem 0.75rem;
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+  background: var(--white);
+  color: var(--blue);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.toggle:hover {
+  border-color: var(--blue);
+}
+
+.isFavorite {
+  border-color: var(--sun);
+  background: var(--sun);
+  color: var(--ink);
+}
+
+.isFavorite:hover {
+  border-color: var(--ink);
+}

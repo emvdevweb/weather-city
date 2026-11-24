@@ -1,0 +1,178 @@
+.searchPage {
+  max-width: 48rem;
+}
+
+.heading {
+  margin-bottom: 2.5rem;
+}
+
+.kicker {
+  margin-bottom: 0.6rem;
+  color: var(--blue);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.heading h1 {
+  max-width: 20ch;
+  color: var(--ink);
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  letter-spacing: -0.04em;
+  line-height: 1.12;
+}
+
+.heading > p:last-child {
+  margin-top: 0.8rem;
+  color: var(--muted);
+}
+
+.form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.searchRow {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.65rem;
+  border: 0;
+}
+
+.searchRow input {
+  min-width: 0;
+  min-height: 3.25rem;
+  flex: 1;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #728b90;
+  border-radius: 0.35rem;
+  background: var(--white);
+  color: var(--ink);
+  font: inherit;
+}
+
+.searchRow button {
+  min-width: 7rem;
+  min-height: 3.25rem;
+  padding: 0.7rem 1rem;
+  border: 0;
+  border-radius: 0.35rem;
+  background: var(--blue);
+  color: var(--white);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.searchRow button:hover:not(:disabled) {
+  background: var(--ink);
+}
+
+.searchRow button:disabled {
+  cursor: wait;
+  opacity: 0.75;
+}
+
+.hint,
+.error {
+  margin-top: 0.55rem;
+  font-size: 0.9rem;
+}
+
+.hint {
+  color: var(--muted);
+}
+
+.error {
+  color: #9c2c20;
+  font-weight: 600;
+}
+
+.results {
+  min-height: 3rem;
+  margin-top: 2.5rem;
+}
+
+.results h2 {
+  margin-bottom: 0.8rem;
+  color: var(--ink);
+  font-size: 1.15rem;
+}
+
+.favorites {
+  margin-top: 2.5rem;
+}
+
+.favorites h2 {
+  margin-bottom: 0.8rem;
+  color: var(--ink);
+  font-size: 1.15rem;
+}
+
+.favorites > p {
+  color: var(--muted);
+}
+
+.results > p {
+  color: var(--muted);
+}
+
+.locationList {
+  padding: 0;
+  list-style: none;
+}
+
+.locationList li + li {
+  border-top: 1px solid var(--line);
+}
+
+.locationRow {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.locationButton {
+  min-width: 0;
+  min-height: 3.75rem;
+  padding: 0.85rem 0.25rem;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+
+.locationButton:hover {
+  color: var(--blue);
+}
+
+.chevron {
+  flex: 0 0 auto;
+  color: var(--blue);
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+@media (max-width: 34rem) {
+  .searchRow {
+    flex-direction: column;
+  }
+
+  .searchRow button {
+    width: 100%;
+  }
+
+  .locationRow {
+    gap: 0.35rem;
+  }
+}

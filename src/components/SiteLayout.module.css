@@ -1,0 +1,39 @@
+.skipLink {
+  position: absolute;
+  z-index: 1;
+  top: 0.75rem;
+  left: 0.75rem;
+  padding: 0.75rem 1rem;
+  transform: translateY(-160%);
+  border-radius: 0.35rem;
+  background: var(--ink);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.skipLink:focus {
+  transform: translateY(0);
+}
+
+.site {
+  width: min(100% - 2rem, 70rem);
+  min-height: 100vh;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  padding-block: clamp(2.5rem, 7vw, 5.5rem);
+}
+
+.main:focus {
+  outline: none;
+}
+
+@media (max-width: 34rem) {
+  .site {
+    width: min(100% - 1.25rem, 70rem);
+  }
+}
